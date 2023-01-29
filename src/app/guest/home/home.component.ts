@@ -9,6 +9,7 @@ import { MenuService } from 'src/app/services/menus/menu.service';
 })
 export class HomeComponent implements OnInit {
 
+
   menus:Menu[] = [];
   constructor(private menuService:MenuService) { }
 

@@ -1,0 +1,55 @@
+<!-- Breadcrumb -->
+<nav
+  class="justify-between px-4 py-3 text-gray-700 sm:flex sm:px-5 bg-gray-50"
+  aria-label="Breadcrumb"
+>
+  <ol class="inline-flex items-center mb-3 space-x-1 md:space-x-3 sm:mb-0">
+    <li>
+      <div class="flex items-center">
+        <a href="#" class="text-lg font-medium md:ml-2">Dinners</a>
+      </div>
+    </li>
+  </ol>
+  <div>
+    <a
+      [routerLink]="['/host/dinners/create']"
+      class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >Create Dinner</a
+    >
+  </div>
+</nav>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
+  <div
+    *ngFor="let menu of menus"
+    class="bg-white border border-gray-100 transition transform duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative"
+  >
+    <span
+      class="bg-red-100 border border-red-500 rounded-full text-primary text-sm poppins px-4 py-1 inline-block mb-4"
+      >Dinner</span
+    ><img
+      class="w-64 mx-auto transform transition duration-300 hover:scale-105"
+      [src]="'assets/' + menu.image"
+      alt=""
+    />
+    <div class="flex flex-col items-left my-3 space-y-2">
+      <h1 class="text-gray-900 poppins text-lg">{{ menu.name }}</h1>
+      <p class="text-gray-500 poppins text-sm text-left">
+        {{ menu.description }}
+      </p>
+      <h2 class="text-gray-900 poppins text-2xl font-bold">
+        ${{ menu.price }}
+      </h2>
+      <p class="text-gray-500 text-sm text-left">
+        Start: {{ menu.startDateTime | date : "short" }} - End:
+        {{ menu.endDateTime | date : "short" }}
+      </p>
+      <a
+        [routerLink]="['/menu', menu.id]"
+        class="bg-indigo-600 text-white px-8 py-2 focus:outline-none poppins rounded-full mt-24 transform transition duration-300 hover:scale-105"
+      >
+        Edit Menu
+      </a>
+    </div>
+  </div>
+</div>

@@ -8,7 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { GuestModule } from './guest/guest.module';
-
+import { HostModule } from './host/host.module';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,8 +19,10 @@ import { GuestModule } from './guest/guest.module';
     AppRoutingModule,
     AuthModule,
     GuestModule,
+    HostModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
