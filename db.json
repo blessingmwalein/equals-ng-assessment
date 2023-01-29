@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Blessing Name",
+      "email": "blessing@gmail.com",
+      "shopName": "Blessing Shop",
+      "password": "123456",
+      "role": "host",
+      "shopBio": "I am a host",
+      "shopAddress": "Lagos"
+    },
+    {
+      "name": "Blessing Mwale",
+      "email": "blessing@gmail.com",
+      "password": "password",
+      "shopBio": "",
+      "shopName": "Aname restaurant",
+      "shopAddress": "7 Wingate Road",
+      "role": "host",
+      "id": 2
+    }
+  ],
+  "menus": [
+    {
+      "id": 1,
+      "name": "Baked Chicken",
+      "description": "Gay one the what walk then she. Demesne mention pr",
+      "price": 66.99,
+      "image": "dinner1.png",
+      "hostId": 2,
+      "startDateTime": "2023-01-29T19:00:00.000Z",
+      "endDateTime": "2023-01-29T20:00:00.000Z",
+      "menuItems": [
+        {
+          "id": 1,
+          "name": "Item 1",
+          "description": "Item 2",
+          "price": 7.78,
+          "image": "dinner1.png"
+        },
+        {
+          "id": 2,
+          "name": "Item 2",
+          "description": "Item 2",
+          "price": 5.67,
+          "image": "dinner1.png"
+        }
+      ]
+    }
+  ]
+}

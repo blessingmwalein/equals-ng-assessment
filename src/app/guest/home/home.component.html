@@ -1,0 +1,60 @@
+<main>
+  <section
+    class="header-banner h-96 w-full bg-yellow-50"
+    style="background-image: url(/assets/bannerbackground.0f3b87c0.png)"
+  >
+    <div class="flex flex-col items-center justify-center h-full">
+      <h1
+        class="text-center text-3xl md:text-4xl lg:text-5xl poppins font-semibold text-gray-700"
+      >
+        Reserve a dinner with your loved ones
+      </h1>
+      <div
+        class="rounded-full p-1 box-border mt-8 bg-white overflow-hidden ring-red-300 focus:ring-4 w-96 flex items-center"
+      >
+        <input
+          type="text"
+          class="rounded-full px-4 focus:outline-none w-full bg-transparent"
+          placeholder="Search here ......."
+        /><button
+          class="text-sm bg-indigo-600 py-3 px-6 rounded-full text-white poppins ring-red-300 focus:ring-4 transition duration-300 hover:scale-105 transform"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="my-12 max-w-screen-xl mx-auto px-6">
+    <div class="flex items-center justify-left space-x-6">
+      <h1 class="text-4xl poppins pb-4">Up Comming Dinners</h1>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
+      <div
+        *ngFor="let menu of menus"
+        class="bg-white border border-gray-100 transition transform duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative"
+      >
+        <span
+          class="bg-red-100 border border-red-500 rounded-full text-primary text-sm poppins px-4 py-1 inline-block mb-4"
+          >Dinner</span
+        ><img
+          class="w-64 mx-auto transform transition duration-300 hover:scale-105"
+          [src]="'assets/' + menu.image"
+          alt=""
+        />
+        <div class="flex flex-col items-center my-3 space-y-2">
+          <h1 class="text-gray-900 poppins text-lg">{{menu.name}}</h1>
+          <p class="text-gray-500 poppins text-sm text-center">
+            {{menu.description}}
+          </p>
+          <h2 class="text-gray-900 poppins text-2xl font-bold">${{menu.price}}</h2>
+          <a
+            [routerLink]="['/menu', menu.id]"
+            class="bg-indigo-600 text-white px-8 py-2 focus:outline-none poppins rounded-full mt-24 transform transition duration-300 hover:scale-105"
+          >
+            View Menu
+        </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
