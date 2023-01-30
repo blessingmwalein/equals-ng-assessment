@@ -29,6 +29,16 @@
       "shopAddress": "7 Wingate Road",
       "role": "host",
       "id": 3
+    },
+    {
+      "name": "",
+      "email": "tatenda@gmail.com",
+      "password": "password",
+      "shopBio": "",
+      "shopName": "",
+      "shopAddress": "",
+      "role": "host",
+      "id": 4
     }
   ],
   "menus": [
@@ -129,6 +139,24 @@
         }
       ],
       "id": 5
+    },
+    {
+      "name": "YEs",
+      "description": "Yes",
+      "price": 30,
+      "startDateTime": "2023-01-25",
+      "endDateTime": "2023-02-10",
+      "image": "dinner2.png",
+      "hostId": 3,
+      "menuItems": [
+        {
+          "name": "Yes yes",
+          "description": "Yes",
+          "price": 12,
+          "image": "dinner2.png"
+        }
+      ],
+      "id": 6
     }
   ]
 }

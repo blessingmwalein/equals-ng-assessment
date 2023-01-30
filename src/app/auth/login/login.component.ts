@@ -16,6 +16,7 @@ export class LoginComponent implements OnInit {
   //create register form
   userForm!: FormGroup;
   alert!: Alert;
+  submited = false;
 
   constructor(private authService: AuthService, private fb: FormBuilder, private router: Router) { }
 
@@ -28,7 +29,7 @@ export class LoginComponent implements OnInit {
 
   loginUser() {
     console.log('clicked');
-
+    this.submited = true;
     if (this.userForm.invalid) {
       this.alert = {
         type: 'error',
@@ -45,6 +46,8 @@ export class LoginComponent implements OnInit {
         localStorage.setItem('user', JSON.stringify(user));
         this.router.navigate(['/']);
       } else {
+    this.submited = false;
+
         this.alert = {
           type: 'error',
           message: 'Invalid email or password'

@@ -13,8 +13,8 @@ export class RegisterComponent implements OnInit {
 
   //create register form
   userForm!: FormGroup;
-
-  constructor(private authService: AuthService, private fb: FormBuilder, private router:Router) { }
+  submited = false;
+  constructor(private authService: AuthService, private fb: FormBuilder, private router: Router) { }
 
   ngOnInit() {
     this.userForm = this.fb.group({
@@ -30,12 +30,18 @@ export class RegisterComponent implements OnInit {
 
   registerUser() {
     console.log('clicked');
+    this.submited = true;
+    if (this.userForm.invalid) {
+      return;
+    }
+
     this.authService.registerUsers(this.userForm.value).subscribe(
       (res) => {
         console.log(res);
         this.router.navigate(['login']);
       },
       (err) => {
+        this.submited = false;
         console.log(err);
       }
     )

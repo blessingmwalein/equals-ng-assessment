@@ -13,6 +13,8 @@ import { Router } from '@angular/router';
 export class CreateDinnerComponent implements OnInit {
 
   crateMenuForm!: FormGroup;
+  submited = false;
+
   // menuItems :MenuItem[] = [];
   constructor(private fb: FormBuilder, private menuService: MenuService, private router: Router, private authService:AuthService) { }
 
@@ -52,6 +54,10 @@ export class CreateDinnerComponent implements OnInit {
 
   submitForm() {
     console.log(this.crateMenuForm.value);
+    this.submited = true;
+    if (this.crateMenuForm.invalid) {
+      return;
+    }
     this.menuService.registerMenus(this.crateMenuForm.value).subscribe((menu) => {
       console.log(menu);
       this.router.navigate(['host/dinners']);
