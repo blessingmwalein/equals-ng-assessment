@@ -1,29 +1,35 @@
-
-
-
-<nav class="bg-gray-800 ">
+<nav class="bg-gray-800">
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
-
-      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+      <div
+        class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+      >
         <div class="flex flex-shrink-0 items-center">
-          <img class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
-          <img class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+          <h4>
+            Dinner<span class="underlined underline-overflow">4U</span>
+          </h4>
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
+            <a
+              href="#"
+              class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+              aria-current="page"
+              >Home</a
+            >
           </div>
         </div>
       </div>
-      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+      <div
+        class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+      >
         <a
-            routerLink="/host/dinner/create"
-            *ngIf="isLoggedIn"
-            class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
-            >Create Dinner</a
-          >
+          routerLink="/host/dinner/create"
+          *ngIf="isLoggedIn"
+          class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+          >Create Dinner</a
+        >
 
         <div class="relative ml-3" *ngIf="isLoggedIn">
           <div>
@@ -37,7 +43,45 @@
             >
               <span class="sr-only">Open user menu</span>
 
-              <svg  class=" rounded-full" xmlns="http://www.w3.org/2000/svg" class="svg-icon" style="width: 2rem; height: 2rem;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1"><path d="M507.36 103C279.84 103 94.73 288.12 94.73 515.66a422.41 422.41 0 0 0 6.48 70.61c0 0.14 0.25 0.08 0.3 0.2a13.58 13.58 0 0 0 13 10.06 13.76 13.76 0 0 0 13.75-13.76 11.88 11.88 0 0 0-0.27-1.32l0.24-0.11a386 386 0 0 1-6-65.66c0-212.7 172.43-385.13 385.12-385.13S892.49 303 892.49 515.68 720.06 900.8 507.36 900.8c-142.14 0-266-77.22-332.69-191.79 0-0.07-0.09-0.11-0.11-0.18-0.18-0.3-0.38-0.59-0.55-0.89a13.61 13.61 0 0 0-12-7.37 13.76 13.76 0 0 0-13.75 13.75 13.42 13.42 0 0 0 2.74 7.83l-0.23 0.14c71.53 123 204.41 206 356.61 206C734.89 928.29 920 743.2 920 515.66S734.89 103 507.36 103z" fill="#3585F9"/><path d="M507.37 570.43c82.32 0 149.31 67 149.31 149.31h27.51c0-97.49-79.32-176.82-176.82-176.82s-176.83 79.33-176.83 176.82h27.51c0-82.33 66.95-149.31 149.32-149.31z" fill="#3585F9"/><path d="M344.29 719.74m-13.75 0a13.75 13.75 0 1 0 27.5 0 13.75 13.75 0 1 0-27.5 0Z" fill="#3585F9"/><path d="M670.43 719.74m-13.75 0a13.75 13.75 0 1 0 27.5 0 13.75 13.75 0 1 0-27.5 0Z" fill="#3585F9"/><path d="M531.854464 448.620636m-76.926146 76.926147a108.79 108.79 0 1 0 153.852293-153.852294 108.79 108.79 0 1 0-153.852293 153.852294Z" fill="#BAD4FF"/><path d="M507.36 570.42c-75.15 0-136.29-61.14-136.29-136.3s61.14-136.3 136.29-136.3 136.3 61.15 136.3 136.3-61.14 136.3-136.3 136.3z m0-245.09a108.8 108.8 0 1 0 108.8 108.79 108.92 108.92 0 0 0-108.8-108.79z" fill="#3585F9"/></svg>
+              <svg
+                class="rounded-full"
+                xmlns="http://www.w3.org/2000/svg"
+                class="svg-icon"
+                style="
+                  width: 2rem;
+                  height: 2rem;
+                  vertical-align: middle;
+                  fill: currentColor;
+                  overflow: hidden;
+                "
+                viewBox="0 0 1024 1024"
+                version="1.1"
+              >
+                <path
+                  d="M507.36 103C279.84 103 94.73 288.12 94.73 515.66a422.41 422.41 0 0 0 6.48 70.61c0 0.14 0.25 0.08 0.3 0.2a13.58 13.58 0 0 0 13 10.06 13.76 13.76 0 0 0 13.75-13.76 11.88 11.88 0 0 0-0.27-1.32l0.24-0.11a386 386 0 0 1-6-65.66c0-212.7 172.43-385.13 385.12-385.13S892.49 303 892.49 515.68 720.06 900.8 507.36 900.8c-142.14 0-266-77.22-332.69-191.79 0-0.07-0.09-0.11-0.11-0.18-0.18-0.3-0.38-0.59-0.55-0.89a13.61 13.61 0 0 0-12-7.37 13.76 13.76 0 0 0-13.75 13.75 13.42 13.42 0 0 0 2.74 7.83l-0.23 0.14c71.53 123 204.41 206 356.61 206C734.89 928.29 920 743.2 920 515.66S734.89 103 507.36 103z"
+                  fill="#3585F9"
+                />
+                <path
+                  d="M507.37 570.43c82.32 0 149.31 67 149.31 149.31h27.51c0-97.49-79.32-176.82-176.82-176.82s-176.83 79.33-176.83 176.82h27.51c0-82.33 66.95-149.31 149.32-149.31z"
+                  fill="#3585F9"
+                />
+                <path
+                  d="M344.29 719.74m-13.75 0a13.75 13.75 0 1 0 27.5 0 13.75 13.75 0 1 0-27.5 0Z"
+                  fill="#3585F9"
+                />
+                <path
+                  d="M670.43 719.74m-13.75 0a13.75 13.75 0 1 0 27.5 0 13.75 13.75 0 1 0-27.5 0Z"
+                  fill="#3585F9"
+                />
+                <path
+                  d="M531.854464 448.620636m-76.926146 76.926147a108.79 108.79 0 1 0 153.852293-153.852294 108.79 108.79 0 1 0-153.852293 153.852294Z"
+                  fill="#BAD4FF"
+                />
+                <path
+                  d="M507.36 570.42c-75.15 0-136.29-61.14-136.29-136.3s61.14-136.3 136.29-136.3 136.3 61.15 136.3 136.3-61.14 136.3-136.3 136.3z m0-245.09a108.8 108.8 0 1 0 108.8 108.79 108.92 108.92 0 0 0-108.8-108.79z"
+                  fill="#3585F9"
+                />
+              </svg>
             </button>
           </div>
 
@@ -82,33 +126,62 @@
       </div>
     </div>
   </div>
-
 </nav>
 
-
-<aside id="default-sidebar" class="fixed  w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+<aside
+  id="default-sidebar"
+  class="fixed w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+  aria-label="Sidebar"
+>
   <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-     <ul class="space-y-2">
-        <li>
-           <a
-           routerLink="/host/dashboard"
+    <ul class="space-y-2">
+      <li>
+        <a
+          routerLink="/host/dashboard"
+          class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+        >
+          <svg
+            aria-hidden="true"
+            class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+            <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+          </svg>
 
-           class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-              <svg aria-hidden="true" class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
-              <span class="ml-3">Dashboard</span>
-           </a>
-        </li>
+          <span class="ml-3">Dashboard</span>
+        </a>
+      </li>
 
-        <li>
-           <a
-           routerLink="/host/dinners"
-           class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-              <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"></path><path d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path></svg>
-              <span class="flex-1 ml-3 whitespace-nowrap">Dinners</span>
-              <span class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
-           </a>
-        </li>
-        <li>
+      <li>
+        <a
+          routerLink="/host/dinners"
+          class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+        >
+          <svg
+            aria-hidden="true"
+            class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"
+            ></path>
+            <path
+              d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
+            ></path>
+          </svg>
+          <span class="flex-1 ml-3 whitespace-nowrap">Dinners</span>
+          <span
+            class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300"
+            >3</span
+          >
+        </a>
+      </li>
+      <!-- <li>
            <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
               <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
               <span class="flex-1 ml-3 whitespace-nowrap">Reservations</span>
@@ -119,13 +192,11 @@
               <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg>
               <span class="flex-1 ml-3 whitespace-nowrap">Menus</span>
            </a>
-        </li>
-
-     </ul>
+        </li> -->
+    </ul>
   </div>
 </aside>
 
 <div class="p-4 sm:ml-64">
   <router-outlet></router-outlet>
-
 </div>

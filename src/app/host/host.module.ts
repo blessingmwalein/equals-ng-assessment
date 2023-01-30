@@ -6,6 +6,7 @@ import { HostRoutingModule } from './host-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HostComponent } from './host.component';
 import { CreateDinnerComponent } from './create-dinner/create-dinner.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { CreateDinnerComponent } from './create-dinner/create-dinner.component';
   ],
   imports: [
     CommonModule,
-    HostRoutingModule
+    HostRoutingModule,
+    ReactiveFormsModule,
+
   ]
 })
 export class HostModule { }

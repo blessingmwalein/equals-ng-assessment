@@ -19,6 +19,16 @@
       "shopAddress": "7 Wingate Road",
       "role": "host",
       "id": 2
+    },
+    {
+      "name": "Tatenda Mwale",
+      "email": "tatenda@gmail.com",
+      "password": "password",
+      "shopBio": "",
+      "shopName": "Tatendas Shop",
+      "shopAddress": "7 Wingate Road",
+      "role": "host",
+      "id": 3
     }
   ],
   "menus": [
@@ -47,6 +57,78 @@
           "image": "dinner1.png"
         }
       ]
+    },
+    {
+      "name": "Menu 2",
+      "description": "Menu new",
+      "price": 20,
+      "startDateTime": "2023-02-06",
+      "endDateTime": "2023-02-03",
+      "image": "dinner2.png",
+      "hostId": 2,
+      "menuItems": [
+        {
+          "name": "",
+          "description": "",
+          "price": 0,
+          "image": "dinner2.png"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "new",
+      "description": "new",
+      "price": 30,
+      "startDateTime": "2023-01-30",
+      "endDateTime": "2023-02-02",
+      "image": "dinner2.png",
+      "hostId": 2,
+      "menuItems": [
+        {
+          "name": "New",
+          "description": "new menu item",
+          "price": 30,
+          "image": "dinner2.png"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "Another One",
+      "description": "yes",
+      "price": 20,
+      "startDateTime": "2023-01-16",
+      "endDateTime": "2023-01-26",
+      "image": "dinner2.png",
+      "hostId": 2,
+      "menuItems": [
+        {
+          "name": "Menu item",
+          "description": "New menu item",
+          "price": 5,
+          "image": "dinner2.png"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "Lazania",
+      "description": "Dinners",
+      "price": 20,
+      "startDateTime": "2023-01-24",
+      "endDateTime": "2023-02-02",
+      "image": "dinner2.png",
+      "hostId": 3,
+      "menuItems": [
+        {
+          "name": "Yes",
+          "description": "YEs",
+          "price": 30,
+          "image": "dinner2.png"
+        }
+      ],
+      "id": 5
     }
   ]
 }
