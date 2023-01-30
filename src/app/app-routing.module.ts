@@ -3,6 +3,7 @@ import { AuthModule } from './auth/auth.module';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GuestComponent } from './guest/guest.component';
+import { AuthGuard } from './auth/auth.guard';
 
 const routes: Routes = [
   {
@@ -17,6 +18,7 @@ const routes: Routes = [
   {
     path: 'host',
     component:HostComponent,
+    canActivate:[AuthGuard],
     loadChildren: () => import('./host/host.module').then(m => m.HostModule)
   }
 ];
